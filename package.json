@@ -1,0 +1,26 @@
+{
+  "name": "desafio-a2a-com-mcp",
+  "version": "1.0.0",
+  "description": "*Onde termina a profundidade e começa o alcance*",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:mcp": "node servidor-mcp/index.js",
+    "start:agente": "node agente/index.js",
+    "validate": "python validador/validar.py --agente http://localhost:7300 --mcp http://localhost:7301"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiago-alcaras/desafio-a2a-com-mcp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiago-alcaras/desafio-a2a-com-mcp/issues"
+  },
+  "homepage": "https://github.com/thiago-alcaras/desafio-a2a-com-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0"
+  }
+}
